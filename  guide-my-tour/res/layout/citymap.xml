@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!--
+		this xml is the design for the city map interface. citymap shows the
+		map with a list of included cities in it user can select a particular
+		city from that. then it will navigate into that particular city and it
+		will show the interest places around that city within a distance of
+		100km
+	-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<com.google.android.maps.MapView
+		android:id="@+id/citymap" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:enabled="true"
+		android:clickable="true" android:apiKey="0kN4Tt7QhuIGpmFpmuOqCBJMvzpRd9NGjXgip8w" />
+
+	<Spinner android:id="@+id/citySpinner" android:layout_width="250dp"
+		android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+		android:layout_marginTop="1dp">
+
+	</Spinner>
+
+	<LinearLayout android:id="@+id/cityzoom"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true" />
+</RelativeLayout>

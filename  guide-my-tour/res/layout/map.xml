@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+	<!-- this is the xml file for the design of the ViewMap Layout
+		the following code shows how I use the google maps package to get the
+		MapView api key has obtained with the debug certificate MD5 hash
+	-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<com.google.android.maps.MapView
+		android:id="@+id/mapView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:enabled="true"
+		android:clickable="true" android:apiKey="0kN4Tt7QhuIGpmFpmuOqCBJMvzpRd9NGjXgip8w" />
+
+	<Spinner android:id="@+id/typespinner" android:layout_width="250dp"
+		android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+		android:layout_marginTop="1dp">
+	</Spinner>
+
+</RelativeLayout>
